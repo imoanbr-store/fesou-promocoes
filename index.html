@@ -1,0 +1,236 @@
+
+<div id="oferta-vip-final">
+
+<style>
+/* --- AJUSTE GERAL --- */
+body.page {
+    background: linear-gradient(135deg, #1E7F43 0%, #2FA866 100%) !important;
+}
+header.site-header,
+h1.entry-title,
+footer.site-footer {
+    display: none !important;
+}
+#content {
+    padding: 0 !important;
+    margin: 0 !important;
+    width: 100vw;
+    max-width: 100vw;
+}
+
+/* --- PRINCIPAL --- */
+#oferta-vip-final {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 35px 20px 30px;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: #0b3d22;
+
+    --cor-container: #E6F4EA;        /* verde claro */
+    --cor-gradiente-1: #1E7F43;      /* verde escuro */
+    --cor-principal: #2FA866;        /* verde médio */
+}
+
+/* CONTAINER */
+#oferta-vip-final .container {
+    max-width: 450px;
+    width: 100%;
+    background: var(--cor-container);
+    border-radius: 20px;
+    padding: 26px 20px;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,.45);
+    border: 1px solid rgba(255,255,255,0.35);
+}
+
+/* LOGO */
+#oferta-vip-final .profile-pic {
+    display: block !important;
+    margin: 0 auto 12px auto !important;
+    width: 82px !important;
+    height: 82px !important;
+    border-radius: 50%;
+    border: 3px solid var(--cor-principal);
+    object-fit: cover !important;
+}
+
+/* TÍTULO */
+#oferta-vip-final h1 {
+    font-size: 1.6rem;
+    font-weight: 900;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 12px;
+    color: #0b3d22;
+}
+
+/* TEXTO */
+#oferta-vip-final p {
+    margin-bottom: 14px;
+    font-size: .92rem;
+    color: #145a32;
+}
+
+/* TIMER */
+#oferta-vip-final .timer-box {
+    background: rgba(0,0,0,0.18);
+    border-radius: 10px;
+    padding: 8px 12px 10px;
+    border: 1px solid var(--cor-gradiente-1);
+    margin-bottom: 20px;
+}
+#oferta-vip-final .timer-box p {
+    font-size: .75rem;
+    margin-bottom: 4px;
+    font-weight: 700;
+    color: #ffffff;
+}
+#oferta-vip-final #countdown {
+    font-size: 2.4rem;
+    font-weight: 900;
+    color: #ffffff;
+    text-shadow: 0 0 10px rgba(0,0,0,.6);
+}
+
+/* BARRA DE PROGRESSO */
+#oferta-vip-final .vagas-container {
+    margin-bottom: 30px !important;
+}
+#oferta-vip-final .progress-bar {
+    height: 22px;
+    background: rgba(0,0,0,0.35);
+    border-radius: 10px;
+    overflow: hidden;
+}
+#oferta-vip-final .progress-bar-fill {
+    height: 100%;
+    background: linear-gradient(90deg, var(--cor-gradiente-1), var(--cor-principal));
+    transition: width 1s;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#oferta-vip-final .progress-bar-text {
+    color: #ffffff;
+    font-weight: 800;
+    font-size: .85rem;
+    padding-right: 6px;
+}
+
+/* BOTÃO */
+#oferta-vip-final .button {
+    width: 100%;
+    background: linear-gradient(45deg, var(--cor-gradiente-1), var(--cor-principal));
+    padding: 18px;
+    font-size: 1.05rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 14px;
+    box-shadow: 0 0 25px rgba(0,0,0,.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    animation: pulseButton 1.6s infinite !important;
+}
+
+#oferta-vip-final .button img.wpp-icon {
+    width: 26px;
+    height: 26px;
+}
+
+@keyframes pulseButton {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.07); }
+    100% { transform: scale(1); }
+}
+
+/* RODAPÉ */
+.footer-copy {
+    margin-top: 26px;
+    padding: 12px 0;
+    background: linear-gradient(90deg, #1E7F43, #2FA866);
+    font-size: .85rem;
+    text-align: center;
+    color: #ffffff;
+}
+.footer-copy a {
+    color: #ffffff;
+    font-weight: 700;
+}
+</style>
+
+<div class="container">
+
+    <img src="https://mpimoan.com/wp-content/uploads/2025/03/face-store2.png" class="profile-pic">
+
+    <h1>Fesou Promoções!</h1>
+<h1>Ofertas que poucos veem, reunidas em um só lugar</h1>
+
+
+    <p>Entre no grupo VIP e receba ofertas diárias da Shopee, Amazon e Mercado Livre antes de todo mundo!</p>
+
+    <div class="timer-box">
+        <p>O acesso VIP gratuito está quase completo:</p>
+        <div id="countdown">03:00</div>
+    </div>
+
+    <div class="vagas-container">
+        <div class="vagas-texto">
+            Garanta seu acesso enquanto ainda está disponível <strong id="vagas-restantes">190</strong> VAGAS!
+        </div>
+
+        <div class="progress-bar">
+            <div class="progress-bar-fill" id="progress-fill">
+                <span class="progress-bar-text" id="progress-text">0%</span>
+            </div>
+        </div>
+    </div>
+
+    <a href="https://chat.whatsapp.com/LAaKyeGt4WDGrV4oRo8vrf"
+       class="button" style="margin-top:10px !important;">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="wpp-icon">
+        Entrar no grupo
+    </a>
+
+</div>
+
+<div class="footer-copy">
+    © 2025 — Desenvolvido por 
+    <a href="https://instagram.com/fesoustore" target="_blank">@fesoustore</a> • FeSou Store
+</div>
+
+<script>
+// Cronômetro
+let timer = 3 * 60;
+const cd = document.getElementById("countdown");
+setInterval(() => {
+    let m = String(parseInt(timer/60)).padStart(2,'0');
+    let s = String(parseInt(timer%60)).padStart(2,'0');
+    cd.textContent = `${m}:${s}`;
+    if(--timer < 0) cd.textContent="ENCERRADO";
+},1000);
+
+// Barra de vagas
+const total = 1024;
+let vagas = 190;
+function updateBar(){
+    const ocup = total - vagas;
+    const porc = (ocup/total)*100;
+    document.getElementById("progress-fill").style.width = porc+"%";
+    document.getElementById("progress-text").textContent = Math.round(porc)+"%";
+    document.getElementById("vagas-restantes").textContent = vagas > 25 ? vagas : 25;
+    if(vagas > 25) vagas--;
+}
+setInterval(updateBar,3000);
+updateBar();
+</script>
+
+</div>
+
