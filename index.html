@@ -235,9 +235,10 @@ box-sizing: border-box;
    "
    style="margin-top:10px !important;">
 
-
+<button id="btn-whatsapp" class="button" style="margin-top:10px !important;">
         <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="wpp-icon">
         Quero Ofertas Agora!
+    </button>
     </a>
 
 </div>
@@ -271,6 +272,14 @@ function updateBar(){
 }
 setInterval(updateBar,3000);
 updateBar();
+    
+    document.getElementById("btn-whatsapp").addEventListener("click", function(){
+    fbq('track','Lead');
+    fbq('trackCustom','LeadWhatsApp');
+    setTimeout(function(){
+        window.open("https://chat.whatsapp.com/LAaKyeGt4WDGrV4oRo8vrf","_blank");
+    },200);
+});
 </script>
 
 </div>
